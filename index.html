@@ -19,6 +19,34 @@
             font-family:  'Baloo Tammudu 2', cursive;
 
         }
+        .armaan
+        {
+            animation: changebackground 10s infinite linear;
+        }
+        @keyframes changebackground{
+            0%{
+                background-image: url('taj-mahal.jpg')
+
+            }
+            10%{
+                background-image: url('darjeeling.jpg');
+            }
+            20%{
+                background-image: url('taj-mahal.jpg');
+            }
+            35%{
+                background-image: url('jaipur.jpg');
+            }
+            60%{
+                background-image: url('haryana.jpg');
+            }
+            80%{
+               background-image: url('delhi.jpg');
+            } 
+            100%{
+               background-image: url('mumbai.jpg');
+            }
+        }
         header{
             width:100%;
             height: 100vh;
@@ -131,8 +159,9 @@ color:#00b894;
             color:#000;
         }
         @keyframes changetext{
-            0%{
+            10%{
                 content: "Darjeeling";
+                
             }
             20%{
                 content: "agra";
@@ -152,8 +181,8 @@ color:#00b894;
 
         }
     </style>
-    <body>
-<header>
+    <body >
+<header class="armaan">
     <nav>
     <div class="logo"><h1 class="animate__animated animate__heartBeat">Mera bharat</h1></div>
     <div class="menu">
