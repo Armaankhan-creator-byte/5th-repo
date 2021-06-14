@@ -21,13 +21,10 @@
         }
         .armaan
         {
-            animation: changebackground 10s infinite linear;
+            animation: changebackground 20s infinite linear;
         }
         @keyframes changebackground{
-            0%{
-                background-image: url('taj-mahal.jpg')
-
-            }
+           
             10%{
                 background-image: url('darjeeling.jpg');
             }
@@ -50,18 +47,22 @@
         header{
             width:100%;
             height: 100vh;
+            /*this is for making the background tajmahal image a bit darker.*/
             background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1)), url('taj-mahal.jpg');
             background-repeat: no-repeat;
+            /* this property is used for whatever is present at the background either color or image should be visible centerally through the page*/
             background-size: cover;
         }
         nav{
             width:100%;
             height: 15vh;
+            /*r=red,g=green,b=black, a=alpha which is used to decide the opacity of the color;*/
             background:rgba(0,0,0,0.2);
             color:white;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            /*make the text in capital letter*/
             text-transform: uppercase;
         }
         nav .logo{
@@ -80,6 +81,7 @@
             color:white;
             font-weight: bolder;
         }
+        /*nav.menu me jo iska first child h which is home os ka color ye kr do*/
         nav .menu a:first-child
         {
 color:#00b894;
@@ -94,13 +96,11 @@ color:#00b894;
             color: white;
 
         }
-        section{
-
-        } 
+        
         section h3{
             font-size: 40px;
             font-weight: 200;
-          
+          /*it defines the space between the text within a word means letters ko kulla kr ke display krega*/
             letter-spacing: 5px;
             text-shadow:1px 1px 0.2px black;
         }
@@ -114,29 +114,32 @@ color:#00b894;
         }
         section p{
             font-size: 25px;
+            /*it defines  the space between the words*/
             word-spacing: 5px;
             margin-bottom: 25px;
-            text-shadow: 1px 1px 1px black;
+            text-shadow: 1px 1px 2px black;
         }
         section a{
           
             text-decoration: none;
             font-weight: 700;
             padding:12px 30px;
-            outline: none;
+            
             font-size:13px;
             letter-spacing: 1px;
             border-radius: 4px;
             text-transform: uppercase;
+            /*transition is shorthand property in which stands all for tranistion property ,0.5s for transition duration and ease is the tranistion function */
             transition: all 0.5s ease;
         }
-        section .btnone{
+         .btnone{
             background: #fff;
             color:#000;
+
            
 
         }
-        section .btntwo{
+         .btntwo{
             background: #00b894;
             color:white;
             margin-left: 20px;
@@ -144,7 +147,8 @@ color:#00b894;
         }
         .change_content::after{
             content: '';
-            animation: changetext 10s infinite linear ;
+/*changetext =name of animation,20s=time of animation,infinite=count of anmation,linear=animation function name*/ 
+            animation: changetext 20s infinite linear ;
             color: #00b894;
             text-transform: uppercase;
             margin-left: 20px;
@@ -153,10 +157,12 @@ color:#00b894;
         .btnone:hover{
             background: #00b894;
             color:white;
+            padding-left:60px;
         }
         .btntwo:hover{
             background: #fff;
             color:#000;
+            padding-left: 60px;
         }
         @keyframes changetext{
             10%{
